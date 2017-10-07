@@ -10,6 +10,7 @@ import android.view.MenuItem;
 
 import com.example.android.sanrakshan.Fragments.ContactsFragment;
 import com.example.android.sanrakshan.Fragments.PoliceFragment;
+import com.example.android.sanrakshan.Fragments.ReportFragment;
 import com.example.android.sanrakshan.Fragments.TipsFragment;
 import com.example.android.sanrakshan.R;
 
@@ -63,6 +64,16 @@ public class MainActivity extends AppCompatActivity {
                     fragTxn.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
                     fragTxn.commit();
                 }
+                if (item.getItemId() == R.id.reportabuse){
+                    fragManager = getSupportFragmentManager();
+                    ReportFragment reportFragment = new ReportFragment(MainActivity.this);
+                    fragTxn = fragManager.beginTransaction();
+                    fragTxn.replace(R.id.fragFrame,reportFragment );
+                    fragTxn.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+                    fragTxn.commit();
+                }
+
+
 
                 return true;
             }

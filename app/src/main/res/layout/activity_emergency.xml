@@ -22,21 +22,23 @@
         />
 
     <TextView
+        android:id="@+id/tv_msg"
         android:layout_margin="50dp"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="In an Emergency"
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="18sp"
 
         />
 
     <Button
         android:id="@+id/btn_Close"
-        android:layout_gravity="center"
+        android:layout_gravity="bottom|center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Close"
+
         />
 
 </LinearLayout>

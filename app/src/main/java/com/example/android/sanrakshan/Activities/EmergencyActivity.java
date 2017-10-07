@@ -11,7 +11,7 @@ import com.example.android.sanrakshan.R;
 
 public class EmergencyActivity extends AppCompatActivity {
 
-    TextView tvName;
+    TextView tvName,tvmsg;
     Button btnClose;
     public static MediaPlayer mp;
 
@@ -20,7 +20,11 @@ public class EmergencyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency);
 
+        String msg = getIntent().getStringExtra("msg");
+
         tvName = (TextView) findViewById(R.id.tv_EmergencyName);
+        tvmsg = (TextView) findViewById(R.id.tv_msg);
+        tvmsg.setText(msg);
         btnClose = (Button) findViewById(R.id.btn_Close);
 
         mp = MediaPlayer.create(this,R.raw.siren);
@@ -29,6 +33,7 @@ public class EmergencyActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mp.stop();
+                finish();
             }
         });
 

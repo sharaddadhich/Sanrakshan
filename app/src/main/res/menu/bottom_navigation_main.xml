@@ -20,4 +20,11 @@
         android:icon="@drawable/tips"
         android:title="Safety Tips" />
 
+    <item
+        android:id="@+id/reportabuse"
+        android:enabled="true"
+        android:icon="@drawable/reporticon"
+        android:title="Report" />
+
+
 </menu>

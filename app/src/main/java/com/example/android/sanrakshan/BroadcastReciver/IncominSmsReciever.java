@@ -41,6 +41,7 @@ public class IncominSmsReciever extends BroadcastReceiver {
                     {
                         Toast.makeText(context, "Recived msg", Toast.LENGTH_SHORT).show();
                         Intent gotomain =  new Intent();
+                        gotomain.putExtra("msg",message);
                         gotomain.setClassName("com.example.android.sanrakshan","com.example.android.sanrakshan.Activities.EmergencyActivity");
                         gotomain.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(gotomain);
