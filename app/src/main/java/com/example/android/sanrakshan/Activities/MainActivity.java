@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.EditText;
 
 import com.example.android.sanrakshan.Fragments.ContactsFragment;
 import com.example.android.sanrakshan.Fragments.PoliceFragment;

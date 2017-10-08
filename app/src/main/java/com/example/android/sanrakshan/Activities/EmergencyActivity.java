@@ -22,7 +22,6 @@ public class EmergencyActivity extends AppCompatActivity {
 
         String msg = getIntent().getStringExtra("msg");
 
-        tvName = (TextView) findViewById(R.id.tv_EmergencyName);
         tvmsg = (TextView) findViewById(R.id.tv_msg);
         tvmsg.setText(msg);
         btnClose = (Button) findViewById(R.id.btn_Close);

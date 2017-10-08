@@ -191,8 +191,8 @@ public class ContactsFragment extends Fragment {
 //                    sendMessage("9958421789",result.get(0));
 //                    String i = Fragment3.sosContacts.get(0);
 
-                    sendMessage("8800387550", "Sarthak " + result.get(0)  + " Sanrakshan Team ");
-                    sendMessage("9650924130", "Sarthak " + result.get(0)  + " Sanrakshan Team ");
+                    sendMessage("8800387550",  result.get(0)  + " Sanrakshan Team ");
+                    sendMessage("9565689120", result.get(0)  + " Sanrakshan Team ");
                 }
                 break;
             }
