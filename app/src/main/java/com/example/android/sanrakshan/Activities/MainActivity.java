@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         fragTxn.replace(R.id.fragFrame, contactsFragment);
         fragTxn.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         fragTxn.commit();
+        //done 
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
 
